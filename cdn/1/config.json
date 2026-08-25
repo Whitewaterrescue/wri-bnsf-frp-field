@@ -798,7 +798,7 @@
       "version": "1.20.0",
       "label": "Card Text",
       "config": {
-        "text": "<p><span style=\"font-size:14px;font-weight:bold;\"><exp data-uniqueid=\"61db3a756c66\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsite_code%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsite_code%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22site_code%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{site_code}</exp></span><span style=\"font-size:14px;\"> &mdash; <exp data-uniqueid=\"f1ca39081e71\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7BSite_Name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7BSite_Name%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22Site_Name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{Site_Name}</exp></span></p><p><span style=\"font-size:11px;color: var(--sys-color-surface-paper-hint);\"><exp data-uniqueid=\"925c4ebb17a4\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7Bfacility_name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bfacility_name%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22facility_name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{facility_name}</exp> &bull; <exp data-uniqueid=\"db8f93524e3e\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7BSite_Type%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7BSite_Type%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22Site_Type%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{Site_Type}</exp></span></p>",
+        "text": "<p><span style=\"font-size:14px;font-weight:bold;\"><exp data-uniqueid=\"1a038e700e89\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsite_code%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsite_code%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22site_code%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{site_code}</exp></span><span style=\"font-size:14px;\"> &mdash; <exp data-uniqueid=\"d474d73bf524\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7BSite_Name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7BSite_Name%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22Site_Name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{Site_Name}</exp></span></p><p><span style=\"font-size:11px;color: var(--sys-color-surface-paper-hint);\"><exp data-uniqueid=\"ede1c4a70530\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7Bfacility_name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bfacility_name%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22facility_name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{facility_name}</exp> &bull; <exp data-uniqueid=\"631412c28781\" data-dsid=\"dataSource_1-FRP_sites\" data-expression=\"%7B%22name%22%3A%22%7BSite_Type%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7BSite_Type%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-FRP_sites%22%2C%22jimuFieldName%22%3A%22Site_Type%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{Site_Type}</exp></span></p>",
         "placeholder": "",
         "style": {
           "verticalAlign": "center",
@@ -1116,7 +1116,11 @@
               "facility_name",
               "watercourse_description",
               "GlobalID"
-            ]
+            ],
+            "boomLayer": {
+              "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/BNSF_FRPs_2025/FeatureServer/13",
+              "siteKeyField": "site_globalid"
+            }
           }
         ],
         "receptorLayers": [],
