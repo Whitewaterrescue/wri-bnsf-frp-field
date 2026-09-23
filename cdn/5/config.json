@@ -1129,7 +1129,8 @@
           "entrainmentMs": 0.35,
           "anchorSpacingFt": 100,
           "reservePct": 20
-        }
+        },
+        "timingModel": "jobson"
       }
     },
     "widget_11": {
